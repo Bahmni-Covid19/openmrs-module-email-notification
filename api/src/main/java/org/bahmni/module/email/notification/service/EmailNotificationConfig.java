@@ -29,7 +29,7 @@ public class EmailNotificationConfig {
     }
 
     public Properties getProperties() throws IOException {
-        if (properties == null) {
+        if (properties == null || properties.size() == 0) {
              properties = new Properties();
              loadProperties();
         }
